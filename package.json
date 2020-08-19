@@ -1,0 +1,28 @@
+{
+  "name": "mini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "autosave": "^1.0.3",
+    "bootstrap": "^4.5.2",
+    "g": "^2.0.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node": "^14.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LEON-coder/Mini.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LEON-coder/Mini/issues"
+  },
+  "homepage": "https://github.com/LEON-coder/Mini#readme"
+}

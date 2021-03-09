@@ -156,12 +156,12 @@ header {
 .main-block {
     display: flex;
     width: 100%;
-    height: 4000px;
+    height: auto;
     flex-direction: column;
 }
 
 .about-block {
-    width: 65%;
+    width: 80%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -216,8 +216,8 @@ header {
 .our_story_block_picture {
     display: flex;
     justify-content: center;
-    align-items: self-start;
-    flex-direction: column;
+    align-items: revert;
+    flex-direction: row;
     margin-right: 0;
     margin-top: 0;
     margin-left: 0;
@@ -252,7 +252,7 @@ header {
     flex-direction: column;
     margin-left: 30px;
     justify-content: left;
-    width: 45%;
+    width: 70%;
 }
 
 .main-block__our_Story_text {
@@ -293,7 +293,7 @@ header {
     display: flex;
     align-self: center;
     background: #e74c3c;
-    width: 450px;
+    width: 100%;
     height: 254px;
     justify-content: center;
     align-items: center;
@@ -311,21 +311,25 @@ header {
 .Our_Skills-block {
     display: flex;
     justify-content: space-between;
-    width: 65%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 130px;
     flex-wrap: wrap;
+    ALIGN-ITEMS: center;
 }
 
 .Our_Skills-block_gadgets {
     display: flex;
     align-items: baseline;
-    margin-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Our_Skills-block_right-block {
-    margin-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
 }
 
 .our-skills-block_iPhone {
@@ -522,6 +526,7 @@ header {
     background-color: #f39c12;
     margin-left: 12px;
     margin-right: 12px;
+    transform: rotate(0deg);
 }
 
 .Members_block {
@@ -741,7 +746,7 @@ header {
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
-    margin-top: 520px;
+    margin-top: 390px;
 }
 
 .section_4_pic {
@@ -770,11 +775,52 @@ header {
     align-items: center;
 }
 
+.section_4__cup-hover {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-self: center;
+}
+
+.section_4__Ellipse_8-hover {
+    display: none;
+}
+
 .section_4__Ellipse_8 {
     display: flex;
     justify-content: center;
     align-self: center;
     width: 100%;
+}
+
+.section_4__Ellipse_8:hover {
+    display: none;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+}
+
+.section_4__Ellipse_8:hover .section_4__Ellipse_8-hover {
+    display: flex;
+}
+
+.section_4__Ellipse_8:hover .section_4__Ellipse_8 {
+    display: none;
+}
+
+.section_4__Ellipse_8:hover .section_4__cup {
+    display: none;
+}
+
+.section_4__Ellipse_8:hover {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+}
+
+.section_4__Ellipse_8:hover .section_4__cup-hover {
+    display: flex;
 }
 
 .section_4__cup {
@@ -814,7 +860,7 @@ header {
 }
 
 .service-block {
-    width: 65%;
+    width: 80%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -1152,6 +1198,7 @@ header {
 }
 
 .Our_Clients_block {
+    background-image: url('img/main/Maria_Jones/Layer 70.png');
     display: flex;
     margin-top: 300px;
     flex-direction: column;
@@ -1511,6 +1558,7 @@ header {
     position: absolute;
     width: 100%;
     height: 460px;
+    top: 0;
 }
 
 .Maria_Jones_block__Maria {
@@ -1518,6 +1566,7 @@ header {
     justify-content: center;
     font-size: 24px;
     font-family: "OpenSans";
+    margin-top: -330px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
@@ -1608,6 +1657,7 @@ header {
     height: 580px;
     background: #f39c12;
     justify-content: center;
+    position: relative;
 }
 
 .Portfolio__shape {
@@ -1621,9 +1671,8 @@ header {
     flex-direction: column;
     position: absolute;
     margin-right: 0;
-    margin-left: 570px;
-    margin-top: 100px;
-    margin-bottom: auto;
+    right: 20px;
+    top: 45%;
 }
 
 .Portfolio_arrows {
@@ -1687,6 +1736,7 @@ header {
     margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
 }
 
 .Portfolio_item a {
@@ -1973,7 +2023,7 @@ header {
     justify-content: center;
     align-self: center;
     position: absolute;
-    top: 40%;
+    top: 35%;
 }
 
 .twitter_block_section_Shape_4 img {
@@ -2402,8 +2452,6 @@ footer {
     height: 500px;
     z-index: 22;
     flex-direction: column;
-    position: absolute;
-    top: 11830px;
 }
 
 footer img {
@@ -2464,11 +2512,19 @@ footer img {
         flex-direction: column;
     }
     header {
-        background-image: url(img/header/Background_header.png);
+        background-image: url(img/header/Background_header\ \(500\ x\ 700\).jpg);
         width: 100%;
         height: 1160px;
         background-repeat: no-repeat;
     }
+
+    .main-block {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-top: -400px;
+}
     .header-block {
         width: 100%;
         justify-content: center;
@@ -2502,7 +2558,7 @@ footer img {
         width: 60%;
     }
     .Best {
-        font-size: 10vw;
+        font-size: 7vw;
         font-family: "OpenSans";
         color: rgb(255, 255, 255);
         text-transform: uppercase;
@@ -2551,6 +2607,7 @@ footer img {
     }
     .two {
         margin-top: 40px;
+        font-size: 16pt;
     }
     .Branding {
         z-index: 729;
@@ -2558,12 +2615,12 @@ footer img {
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 110px;
+        margin-top: 70px;
     }
     .Design {
         font-family: "OpenSans";
         font-weight: 600;
-        font-size: 37px;
+        font-size: 24px;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         text-align: center;
@@ -2580,7 +2637,7 @@ footer img {
         font-size: 16px;
         font-family: "OpenSans";
         margin-right: auto;
-        margin-top: 90px;
+        margin-top: 70px;
         text-decoration: none;
         justify-content: center;
         align-items: center;
@@ -2601,11 +2658,19 @@ footer img {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 90px;
+        margin-top: 0;
         justify-content: center;
-        align-items: center;
         flex-wrap: nowrap;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+    }
+    .stick {
+        width: 4px;
+        height: 45px;
+        background-color: #f39c12;
+        margin-left: 12px;
+        margin-right: 12px;
+        transform: rotate(90deg);
     }
     .about-block__text_proin_gravida {
         font-size: 16px;
@@ -2613,18 +2678,19 @@ footer img {
         color: rgb(77, 77, 77);
         text-transform: uppercase;
         line-height: 1.563;
-        width: 50%;
+        width: 80%;
         height: auto;
         z-index: 680;
         display: flex;
-        align-self: baseline;
+        align-self: center;
         margin-left: 0;
         margin-right: 0;
+        text-align: center;
     }
     .red_image {
         display: flex;
-        width: 100%;
-        height: 254px;
+        width: 39px;
+        height: 32px;
         background: url('img/main/Shape 1.png');
         margin-left: auto;
         margin-right: auto;
@@ -2692,7 +2758,7 @@ footer img {
         margin-right: auto;
         flex-wrap: wrap;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         justify-content: center;
     }
     .main-block__our_story_red_block {
@@ -2767,7 +2833,7 @@ footer img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 190px;
+        margin-top: 0;
     }
     .Simplicity_block_pic {
         position: absolute;
@@ -2793,6 +2859,7 @@ footer img {
     .quatation {
         display: flex;
         width: 90%;
+        margin-top: 60px;
     }
     .quatation_marks img {
         width: 140%;
@@ -2821,6 +2888,15 @@ footer img {
         justify-content: center;
         flex-direction: column;
     }
+    .Maria_Jones_block {
+        width: 100%;
+        height: 767px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 100px;
+        position: relative;
+    }
     .section_6__Package_Pricing {
         font-size: 20px;
         font-family: "OpenSans";
@@ -2828,7 +2904,7 @@ footer img {
         line-height: 1.25;
         text-align: center;
         z-index: 436;
-        margin-top: 1480px;
+        margin-top: 1050px;
         margin-left: 0;
         margin-right: 0;
     }
@@ -2858,8 +2934,15 @@ footer img {
         margin-top: 110px;
         justify-content: center;
         align-items: center;
-        padding-left: 10px;
-        padding-right: 10px;
+        flex-direction: column;
+    }
+    .stick-3 {
+        width: 4px;
+        height: 45px;
+        background-color: #f39c12;
+        margin-left: 12px;
+        margin-right: 12px;
+        transform: rotate(90deg);
     }
     .section_6__Proin_gravida {
         font-size: 16px;
@@ -2867,7 +2950,7 @@ footer img {
         color: rgb(115, 115, 115);
         line-height: 1.75;
         text-align: center;
-        width: 90%;
+        width: 80%;
         z-index: 450;
         margin-top: 20px;
         margin-left: auto;
@@ -2881,18 +2964,67 @@ footer img {
         margin-top: 30px;
     }
     .section_team-block {
-        margin-top: 110px;
+        margin-top: -80px;
+    }
+    .team-block {
+        width: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .stick-2 {
+        width: 4px;
+        height: 45px;
+        background-color: #f39c12;
+        margin-left: 12px;
+        margin-right: 12px;
+        transform: rotate( 90deg);
+    }
+    .section_4 {
+        display: flex;
+        width: 100%;
+        height: 767px;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        position: relative;
     }
     .section_4_pic {
         position: absolute;
         width: 100%;
-        height: 1330px;
+        height: 600px;
+        top: 0;
+    }
+    .twitter_block_block {
+        display: flex;
+        z-index: 5;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
     }
     .Maria_Jones_block_pic {
         z-index: 4;
         position: absolute;
         width: 100%;
         height: 760px;
+    }
+    .Maria_Jones_block__Maria {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        font-family: "OpenSans";
+        margin-top: 0px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 2.5;
+        text-align: center;
+        z-index: 341;
     }
     .Maria_Jones_block__Proin {
         font-size: 22px;
@@ -2901,7 +3033,7 @@ footer img {
         font-style: italic;
         line-height: 1.364;
         width: 90%;
-        height: 52px;
+        height: auto;
         z-index: 330;
         text-align: center;
         margin-left: auto;
@@ -2928,6 +3060,14 @@ footer img {
         z-index: 78;
         align-items: center;
         flex-wrap: wrap;
+        margin-top: -210px;
+    }
+    .section_5 {
+        display: flex;
+        width: 100%;
+        height: 600px;
+        margin-top: -220px;
+        flex-direction: column;
     }
     .section_4__Ellipse_8 {
         display: flex;
@@ -2936,7 +3076,7 @@ footer img {
         width: 70%;
     }
     .section_4__6k {
-        font-size: 35px;
+        font-size: 23px;
         font-family: "OpenSans";
         color: rgb(255, 255, 255);
         font-weight: bold;
@@ -2946,7 +3086,7 @@ footer img {
         margin-top: 30px;
     }
     .section_4__Coffees {
-        font-size: 30px;
+        font-size: 24px;
         font-family: "OpenSans";
         color: rgb(255, 255, 255);
         font-weight: bold;
@@ -2957,7 +3097,7 @@ footer img {
     .section_4_block {
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
+        width: 40%;
     }
     .section_5__blocks {
         display: flex;
@@ -2996,10 +3136,67 @@ footer img {
         display: flex;
         flex-wrap: wrap;
     }
+    .project_Title_Here_Graphics_block {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: 293px;
+        height: 302px;
+        align-items: center;
+        margin-top: 20px;
+    }
     .project_Title_Here_Graphics_block-2 {
         display: flex;
-        margin-top: 20px;
+        margin-top: 100px;
         flex-wrap: wrap;
+    }
+    .twitter_block {
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+    }
+    .twitter_block_section_four_blocks_one:nth-child(2) {
+        margin-top: 300px;
+    }
+    .twitter_block_section_four_blocks_one:nth-child(3) {
+        margin-top: 300px;
+    }
+    .twitter_block_section {
+        width: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 300px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .twitter_block_section__stick-4 {
+        width: 4px;
+        height: 45px;
+        background-color: #f39c12;
+        margin-left: 12px;
+        margin-right: 12px;
+        transform: rotate(90deg);
+    }
+    .twitter_block_section__about-block {
+        font-size: 16px;
+        font-family: "OpenSans";
+        color: rgb(77, 77, 77);
+        text-transform: uppercase;
+        line-height: 1.563;
+        text-align: center;
+        width: 90%;
+        height: 40px;
+        z-index: 680;
+        display: flex;
+        align-self: baseline;
     }
     .Portfolio_block__about-block {
         font-size: 16px;
@@ -3009,7 +3206,7 @@ footer img {
         line-height: 1.563;
         text-align: left;
         width: 100%;
-        height: 40px;
+        height: auto;
         z-index: 680;
         display: flex;
         align-self: baseline;
@@ -3024,9 +3221,17 @@ footer img {
         text-align: center;
         z-index: 679;
     }
+    .Portfolio_block__stick-4 {
+        width: 4px;
+        height: 45px;
+        background-color: #f39c12;
+        margin-left: 12px;
+        margin-right: 12px;
+        transform: rotate(90deg);
+    }
     .Portfolio_section_pic {
         display: flex;
-        margin-top: 150px;
+        margin-top: 60px;
         width: 100%;
     }
     .Portfolio_block {
@@ -3038,26 +3243,113 @@ footer img {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
     }
     .Portfolio__list_items ul {
         display: inline-flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 90%;
         flex-wrap: wrap;
+    }
+    .Portfolio_item a {
+        font-size: 21px;
+        font-family: "OpenSans";
+        color: #1d1d1d;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.786;
+        text-align: center;
+        z-index: 290;
+        text-decoration: none;
+        list-style: disc;
+        margin-right: 0px;
+        justify-content: center;
     }
     .twitter_block_section_four_blocks_one {
         display: flex;
         width: 90%;
         height: 300px;
         background: #b7b7b7;
-        margin-right: 40px;
+        margin-right: 0;
         position: relative;
         z-index: 5;
         flex-direction: column;
         align-items: center;
+        margin-top: 0px;
+    }
+    .twitter_block_section_logo_text {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .twitter_block_section__John_Doe_24_Comments {
+        display: flex;
+        align-items: baseline;
+        margin-top: 310px;
+        width: 100%;
+        height: auto;
+    }
+    .Read_On {
+        font-size: 14.413px;
+        font-family: "OpenSans";
+        color: rgb(13, 13, 13);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        -moz-transform: matrix( 0.8, 0, 0, 0.90196078431373, 0, 0);
+        -webkit-transform: matrix( 0.8, 0, 0, 0.90196078431373, 0, 0);
+        -ms-transform: matrix( 0.8, 0, 0, 0.90196078431373, 0, 0);
+        display: flex;
+        text-decoration: none;
+        margin-top: 100px;
+        align-self: flex-start;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(243, 156, 18);
+        background-color: rgba(243, 156, 18, 0);
+        width: 105px;
+        z-index: 139;
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+        margin-left: 60px;
+    }
+    .Duis_sed_odio_sit {
+        font-size: 16px;
+        font-family: "OpenSans";
+        color: rgb(115, 115, 115);
+        line-height: 1.35;
+        text-align: left;
+        width: 408px;
+        height: 101px;
+        z-index: 144;
+        margin-left: 10px;
+    }
+    .twitter_block_section__Awesome_Blog {
+        font-size: 13px;
+        font-family: "OpenSans";
+        color: rgb(13, 13, 13);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.25;
+        z-index: 43;
+        display: flex;
+        width: 80%;
+        height: 60px;
+        background: #ffffff;
+        align-self: center;
+        align-items: center;
+        bottom: 0;
+        text-align: center;
+        justify-content: center;
+        right: 0;
     }
     .twitter_block_section__section-1 {
         width: 80%;
+        height: auto;
         display: flex;
         margin-left: auto;
         margin-right: auto;
@@ -3070,10 +3362,81 @@ footer img {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 480px;
+        margin-top: 280px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .Our_Clients_block {
+        background-image: url('img/main/Maria_Jones/Layer 70.png');
+        display: flex;
+        margin-top: 220px;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        position: relative;
+        height: 720px;
+        background-repeat: no-repeat;
+    }
+    .Contact_block_section {
+        width: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
+    }
+    .Contact_block_section__stick-4 {
+        width: 4px;
+        height: 45px;
+        background-color: #f39c12;
+        margin-left: 12px;
+        margin-right: 12px;
+        z-index: 678;
+        transform: rotate(90deg);
+    }
+    .Contact_block_section__about-block {
+        font-size: 16px;
+        font-family: "OpenSans";
+        color: rgb(77, 77, 77);
+        text-transform: uppercase;
+        line-height: 1.563;
+        text-align: left;
+        width: 100%;
+        height: auto;
+        z-index: 680;
+        display: flex;
+        align-self: baseline;
+    }
+    .Our_Clients {
+        font-size: 30px;
+        font-family: "OpenSans";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 2;
+        text-align: center;
+        z-index: 123;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        align-self: center;
+        margin-top: -450px;
+    }
+    .Our_Clients_block__company {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 110px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
     }
     .twitter_block_section__section-2 {
         width: 80%;
@@ -3082,7 +3445,7 @@ footer img {
         margin-right: auto;
         justify-content: center;
         align-items: center;
-        margin-top: 200px;
+        margin-top: 300px;
         flex-wrap: wrap;
     }
     .twitter_block__Aenean_sollicitudin__auctor {
@@ -3103,7 +3466,7 @@ footer img {
         margin-left: auto;
         margin-right: auto;
         flex-wrap: wrap;
-        width: 90%;
+        width: 100%;
     }
     .Drop_Us_block {
         display: flex;
@@ -3118,13 +3481,13 @@ footer img {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 220px;
+        margin-top: 100px;
         justify-content: space-between;
         flex-wrap: wrap;
     }
     .Drop_Us_block_form {
         display: flex;
-        width: 90%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -3142,26 +3505,43 @@ footer img {
         justify-content: center;
         width: 90%;
     }
+    .Submit {
+        font-size: 16.522px;
+        font-family: "OpenSans";
+        color: rgb(13, 13, 13);
+        text-transform: uppercase;
+        line-height: 1.2;
+        -moz-transform: matrix( 0.8, 0, 0, 0.90196078431373, 0, 0);
+        -webkit-transform: matrix( 0.8, 0, 0, 0.90196078431373, 0, 0);
+        -ms-transform: matrix( 0.8, 0, 0, 0.90196078431373, 0, 0);
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(243, 156, 18);
+        background-color: rgb(255, 255, 255);
+        width: 134px;
+        height: auto;
+        z-index: 59;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 20px;
+        font-weight: 600;
+        align-items: center;
+    }
     .name_input_block {
         display: flex;
         align-items: center;
         position: relative;
         justify-content: center;
-        width: 80%;
+        width: 90%;
     }
     .Portfolio_section {
         DISPLAY: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        margin-top: 90px;
-        position: relative;
-    }
-    .Portfolio_section_pic {
-        display: flex;
-        margin-top: 150px;
-        width: 90%;
-        justify-content: center;
+        margin-top: -90px;
         position: relative;
     }
     .Portfolio__radio {
@@ -3170,7 +3550,7 @@ footer img {
         position: absolute;
         margin-bottom: auto;
         right: 33px;
-        top: 49%;
+        top: 48%;
     }
     .Contact_Info_block {
         display: flex;
@@ -3184,7 +3564,7 @@ footer img {
         line-height: 1.75;
         text-align: left;
         width: 90%;
-        height: 73px;
+        height: auto;
         z-index: 87;
         margin-top: 10px;
     }
@@ -3194,11 +3574,12 @@ footer img {
         margin-left: auto;
         margin-right: auto;
         margin-top: -170px;
+        align-items: center;
     }
     .Contact_Info_block_add {
         display: flex;
         flex-direction: column;
-        margin-top: 120px;
+        margin-top: 70px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -3208,8 +3589,7 @@ footer img {
         height: 500px;
         z-index: 22;
         flex-direction: column;
-        position: absolute;
-        top: 18640px;
+        margin-top: 50px;
     }
     .footer_text {
         display: flex;
@@ -3232,7 +3612,7 @@ footer img {
     }
 }
 
-@media (min-width:1000px) and (max-width: 1199px) {
+@media (min-width:768px) and (max-width: 999px) {
     .header-block {
         width: 90%;
         justify-content: center;
@@ -3241,7 +3621,6 @@ footer img {
         display: flex;
         flex-direction: column;
     }
-    .header__list_item {}
     .our_story_block {
         display: flex;
         margin-top: 100px;
@@ -3250,6 +3629,77 @@ footer img {
         margin-right: auto;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .Simplicity_block {
+        display: flex;
+        width: 100%;
+        height: 867px;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .quatation {
+        display: flex;
+        width: 80%;
+    }
+    .section_team-block {
+        margin-top: -100px;
+    }
+    .team-block {
+        width: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 110px;
+        justify-content: center;
+        align-items: center;
+    }
+    .stick-2 {
+        width: 4px;
+        height: 45px;
+        background-color: #f39c12;
+        margin-left: 12px;
+        margin-right: 12px;
+        transform: rotate( 0deg);
+    }
+    .Members_block {
+        display: flex;
+        margin-top: 160px;
+        justify-content: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Simplicity_block__text {
+        font-size: 45px;
+        font-family: "OpenSans";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.333;
+        text-align: center;
+        width: 90%;
+        height: 105px;
+        z-index: 627;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .stripe {
+        margin-top: 100px;
+        z-index: 78;
+    }
+    .main-block__our_story {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        justify-content: left;
+        width: 70%;
     }
     .Portfolio_block {
         width: 84%;
@@ -3266,7 +3716,7 @@ footer img {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
+        margin-top: -380px;
         position: relative;
     }
     .Portfolio_section_pic {
@@ -3278,8 +3728,537 @@ footer img {
         display: flex;
         flex-direction: column;
         position: absolute;
-        left: 400px;
-        top: 480px;
+    }
+    .Portfolio__list_items {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+    }
+    .Portfolio_item a {
+        font-size: 14px;
+        font-family: "OpenSans";
+        color: #1d1d1d;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.786;
+        text-align: center;
+        z-index: 290;
+        text-decoration: none;
+        list-style: none;
+        margin-right: 30px;
+        justify-content: center;
+    }
+    .Portfolio__list_items ul {
+        display: inline-flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .top-block {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 100px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .header__list {
+        display: inline-flex;
+        list-style: none;
+        justify-content: space-between;
+        width: 90%;
+        margin-top: 40px;
+    }
+    .Branding {
+        z-index: 729;
+        width: 80%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    .section_5__blocks {
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .section_5__Designing_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section_5__Developing_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .section_5__Branding_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section_6 {
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 800px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .section_6__Package_Pricing {
+        font-size: 20px;
+        font-family: "OpenSans";
+        color: rgb(13, 13, 13);
+        line-height: 1.25;
+        text-align: left;
+        z-index: 436;
+        margin-top: -60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section_6__Ellipse_banknote {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section_6__Packege_Pricing {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        font-size: 20px;
+        font-family: "OpenSans";
+        color: rgb(13, 13, 13);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.25;
+        text-align: center;
+        z-index: 436;
+    }
+    .section_6__Proin_gravida {
+        font-size: 16px;
+        font-family: "OpenSans";
+        color: rgb(115, 115, 115);
+        line-height: 1.75;
+        text-align: center;
+        width: 70%;
+        height: 101px;
+        margin-right: auto;
+        margin-left: auto;
+        z-index: 450;
+        margin-top: 20px;
+    }
+    .section_6__tariffs {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    .Maria_Jones_block {
+        width: 100%;
+        height: 817px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 90px;
+    }
+    .Maria_Jones_block_pic {
+        z-index: 4;
+        position: absolute;
+        width: 100%;
+        height: 460px;
+    }
+    .Maria_Jones_block__Proin {
+        font-size: 22px;
+        font-family: "OpenSansLight";
+        color: rgb(255, 255, 255);
+        font-style: italic;
+        line-height: 1.364;
+        width: 90%;
+        height: 52px;
+        z-index: 330;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .project_Title_block {
+        width: 70%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 90px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .project_Title_Here_Graphics_block-2 {
+        display: flex;
+        margin-top: 100px;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project_Title_Here_Graphics_block {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: 293px;
+        height: 302px;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .twitter_block_section {
+        width: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 190px;
+        justify-content: center;
+        align-items: center;
+    }
+    .twitter_block_section_four_blocks {
+        width: 100%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -90px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Our_Clients_block {
+        background-image: url('img/main/Maria_Jones/Layer 70 (450 x 900).jpg');
+        display: flex;
+        margin-top: 200px;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        position: relative;
+        height: 900px;
+        background-repeat: no-repeat;
+    }
+    .twitter_block_section__section-1 {
+        width: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .twitter_block_section__section-2 {
+        width: 90%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        flex-wrap: wrap;
+    }
+    .Our_Clients {
+        font-size: 30px;
+        font-family: "OpenSans";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 2;
+        text-align: center;
+        z-index: 123;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        align-self: center;
+        margin-top: -500px;
+    }
+    .Our_Clients_block__company {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 140px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+    }
+    .twitter_block_section_four_blocks_one {
+        display: flex;
+        width: 555px;
+        height: 300px;
+        background: #b7b7b7;
+        position: relative;
+        z-index: 5;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        margin-top: 230px;
+    }
+    .project_Title_Here_Graphics_blocks {
+        display: flex;
+        width: 90%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project_Title_Here_Graphics_block-1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 91%;
+        justify-content: center;
+    }
+    .Contact_block_section {
+        width: 90%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .Contact_block_section__about-block {
+        font-size: 16px;
+        font-family: "OpenSans";
+        color: rgb(77, 77, 77);
+        text-transform: uppercase;
+        line-height: 1.563;
+        text-align: left;
+        width: 75%;
+        height: 40px;
+        z-index: 680;
+        display: flex;
+        align-self: baseline;
+    }
+    .Drop_Us_Contact_Info_block {
+        width: 70%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 140px;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    .Contact_Info_block {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        justify-content: left;
+    }
+    .section_4 {
+        display: flex;
+        width: 100%;
+        height: 767px;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        margin-top: -40px;
+    }
+    .section_4_pic {
+        position: absolute;
+        width: 100%;
+        height: 470px;
+    }
+    .section_4__all_blocks {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        z-index: 78;
+        align-items: center;
+    }
+    .section_5 {
+        display: flex;
+        width: 100%;
+        height: 600px;
+        margin-top: -150px;
+        flex-direction: column;
+    }
+    .service-block {
+        width: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 110px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        height: auto;
+    }
+    .about-block__text_proin_gravida {
+        font-size: 16px;
+        font-family: "OpenSans";
+        color: rgb(77, 77, 77);
+        text-transform: uppercase;
+        line-height: 1.563;
+        width: 80%;
+        height: 40px;
+        z-index: 680;
+        display: flex;
+        align-self: baseline;
+    }
+    footer {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        z-index: 22;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .MINI_2014__All_Right {
+        font-size: 14px;
+        font-family: "OpenSans";
+        color: rgb(13, 13, 13);
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-weight: 600;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 60px;
+    }
+    .footer_socials {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+        width: 90%;
+    }
+    .footer_text {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        justify-content: center;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width:1000px) and (max-width: 1199px) {
+    .header-block {
+        width: 90%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .header__list_item {}
+    .our_story_block {
+        display: flex;
+        margin-top: 100px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+    }
+    .Our_Skills-block {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 130px;
+        flex-wrap: wrap;
+        ALIGN-ITEMS: center;
+    }
+    .Our_Skills-block_right-block {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 100px;
+    }
+    .Our_Skills-block_gadgets {
+        display: flex;
+        align-items: baseline;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Simplicity_block {
+        display: flex;
+        width: 100%;
+        height: 867px;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .quatation {
+        display: flex;
+        width: 80%;
+        height: auto;
+    }
+    .section_team-block {
+        margin-top: 0;
+    }
+    .team-block {
+        width: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .Portfolio_block {
+        width: 84%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .Portfolio_section {
+        DISPLAY: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -390px;
+        position: relative;
+    }
+    .Portfolio_section_pic {
+        display: flex;
+        margin-top: 150px;
+        width: 100%;
+    }
+    .Portfolio__radio {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 20px;
+        top: 45%;
     }
     .Portfolio__list_items {
         display: flex;
@@ -3339,6 +4318,20 @@ footer img {
         justify-content: center;
         display: flex;
         margin-right: auto;
+        margin-left: auto;
+    }
+    .section_6__Proin_gravida {
+        font-size: 16px;
+        font-family: "OpenSans";
+        color: rgb(115, 115, 115);
+        line-height: 1.75;
+        text-align: left;
+        width: 40%;
+        height: 101px;
+        z-index: 450;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .section_6__Packege_Pricing {
         display: flex;
@@ -3369,12 +4362,26 @@ footer img {
         flex-direction: column;
         justify-content: center;
         margin-top: 90px;
+        position: relative;
     }
     .Maria_Jones_block_pic {
         z-index: 4;
         position: absolute;
         width: 100%;
         height: 460px;
+    }
+    .Maria_Jones_block__Maria {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        font-family: "OpenSans";
+        margin-top: -330px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 2.5;
+        text-align: center;
+        z-index: 341;
     }
     .project_Title_block {
         width: 70%;
@@ -3412,12 +4419,18 @@ footer img {
         flex-direction: column;
     }
     .Our_Clients_block {
+        background-image: url('img/main/Maria_Jones/Layer 70 (1200 x 600).jpg');
         display: flex;
-        margin-top: 400px;
+        margin-top: 260px;
         flex-direction: column;
         justify-content: space-around;
         width: 100%;
         position: relative;
+        background-repeat: no-repeat;
+        height: 700px;
+    }
+    .Our_Clients_block img {
+        width: 100%;
     }
     .twitter_block_section__section-1 {
         width: 80%;
@@ -3452,13 +4465,13 @@ footer img {
         align-items: center;
         position: absolute;
         align-self: center;
-        margin-top: -130px;
+        margin-top: -470px;
     }
     .Our_Clients_block__company {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: -485px;
+        margin-top: 0px;
         width: 60%;
         margin-left: auto;
         margin-right: auto;
@@ -3494,7 +4507,7 @@ footer img {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 310px;
+        margin-top: 0;
         align-items: center;
         flex-wrap: nowrap;
         justify-content: center;
@@ -3521,11 +4534,13 @@ footer img {
         justify-content: left;
         flex-wrap: wrap;
     }
+    .left_block {}
     .Contact_Info_block {
         display: flex;
         flex-direction: column;
         margin-left: 0;
         justify-content: left;
+        margin-top: -100px;
     }
     .section_4 {
         display: flex;
@@ -3534,7 +4549,7 @@ footer img {
         background-repeat: no-repeat;
         justify-content: center;
         align-items: center;
-        margin-top: 120px;
+        margin-top: 0;
     }
     .section_4_pic {
         position: absolute;
@@ -3552,8 +4567,19 @@ footer img {
         display: flex;
         width: 100%;
         height: 600px;
-        margin-top: 70px;
+        margin-top: -150px;
         flex-direction: column;
+    }
+    .service-block {
+        width: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 110px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
     }
     .about-block__text_proin_gravida {
         font-size: 16px;
@@ -3566,6 +4592,12 @@ footer img {
         z-index: 680;
         display: flex;
         align-self: baseline;
+    }
+    .social_icons {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        margin-top: 20px;
     }
     footer {
         display: flex;
@@ -3624,7 +4656,6 @@ footer img {
     }
     .our_story_block {
         display: flex;
-        align-items: center;
         margin-top: 100px;
         width: 80%;
         margin-left: auto;
@@ -3640,9 +4671,9 @@ footer img {
     .section_6 {
         justify-content: flex-start;
         display: flex;
-        width: 60%;
+        width: 1170px;
         margin-top: 120px;
-        flex-direction: column;
+        flex-direction: row;
     }
     .section_6__Packege_Pricing {
         display: flex;
@@ -3682,11 +4713,12 @@ footer img {
     .section_6__tariffs {
         display: flex;
         justify-content: center;
-        margin-top: 60px;
+        margin-top: 0;
     }
     .Maria_Jones_block {
         width: 100%;
         height: 767px;
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -3697,7 +4729,7 @@ footer img {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 200px;
+        margin-top: 280px;
         justify-content: center;
         align-items: center;
     }
@@ -3712,14 +4744,14 @@ footer img {
         flex-direction: column;
     }
     .section_team-block {
-        margin-top: 240px;
+        margin-top: 0;
     }
     .team-block {
-        width: 80%;
+        width: 72%;
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 0px;
+        margin-top: -30px;
         justify-content: center;
         align-items: center;
     }
@@ -3730,13 +4762,57 @@ footer img {
         background-repeat: no-repeat;
         justify-content: center;
         align-items: center;
-        margin-top: 250px;
+        margin-top: 50px;
+    }
+    .section_4__all_blocks {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        z-index: 78;
+        align-items: center;
+    }
+    .section_4__Ellipse_8-hover {
+        display: none;
+    }
+    .section_4__Ellipse_8:hover .section_4__Ellipse_8-hover {
+        display: flex;
+    }
+    .section_4__Ellipse_8:hover {
+        display: none;
+    }
+    .section_4__Ellipse_8 {
+        display: flex;
+    }
+    .section_4__Ellipse_8:hover .section_4__cup {
+        display: none;
+    }
+    .section_4__Ellipse_8:hover {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        display: flex;
+    }
+    .section_4__Ellipse_8:hover .section_4__cup-hover {
+        display: flex;
+    }
+    .section_4__cup {
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        align-self: center;
+    }
+    .section_4__cup-hover {
+        position: absolute;
+        display: none;
+        justify-content: center;
+        align-self: center;
     }
     .section_5 {
         display: flex;
         width: 100%;
         height: 600px;
-        margin-top: 240px;
+        margin-top: 0;
         flex-direction: column;
     }
     .service-block {
@@ -3744,7 +4820,7 @@ footer img {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 0px;
+        margin-top: 60px;
         justify-content: center;
         align-items: center;
     }
@@ -3762,7 +4838,7 @@ footer img {
     }
     .section_5__blocks {
         display: flex;
-        width: 90%;
+        width: 1040px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 120px;
@@ -3795,9 +4871,35 @@ footer img {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        margin-top: 0px;
+        margin-top: -310px;
         position: relative;
         width: 100%;
+    }
+    .Portfolio_section_pic {
+        display: flex;
+        margin-top: 150px;
+        width: 1170px;
+        height: 580px;
+        background: #f39c12;
+        justify-content: center;
+        position: relative;
+    }
+    .Portfolio__radio {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-right: 0;
+        right: 20px;
+        top: 45%;
+    }
+    .Portfolio_block {
+        width: 84%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        justify-content: center;
+        align-items: center;
     }
     .main-block__our_story_duis_set {
         font-size: 20px;
@@ -3817,8 +4919,8 @@ footer img {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: -480px;
-        width: 60%;
+        margin-top: -340px;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
         flex-wrap: wrap;
@@ -3838,6 +4940,54 @@ footer img {
         position: absolute;
         align-self: center;
         margin-top: -120px;
+    }
+    .John_Doe_24_Comments {
+        font-size: 14px;
+        font-family: "OpenSans";
+        color: rgb(128, 128, 128);
+        line-height: 1.714;
+        text-align: right;
+        z-index: 145;
+        justify-content: flex-start;
+        display: flex;
+        width: 15%;
+    }
+    .Duis_sed_odio_sit {
+        font-size: 16px;
+        font-family: "OpenSans";
+        color: rgb(115, 115, 115);
+        line-height: 1.75;
+        text-align: left;
+        width: 408px;
+        height: 101px;
+        z-index: 144;
+        margin-left: 27px;
+    }
+    .Read_On {
+        font-size: 14.413px;
+        font-family: "OpenSans";
+        color: rgb(13, 13, 13);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        -moz-transform: matrix( 0.8, 0, 0, 0.90196078431373, 0, 0);
+        -webkit-transform: matrix( 0.8, 0, 0, 0.90196078431373, 0, 0);
+        -ms-transform: matrix( 0.8, 0, 0, 0.90196078431373, 0, 0);
+        display: flex;
+        text-decoration: none;
+        margin-top: 20px;
+        align-self: flex-start;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(243, 156, 18);
+        background-color: rgba(243, 156, 18, 0);
+        width: 105px;
+        z-index: 139;
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+        margin-left: 95px;
     }
     .Our_Skills-block_gadgets {
         display: flex;
@@ -3876,12 +5026,26 @@ footer img {
     .Our_Skills-block_right-Drupal img {
         width: 100%;
     }
+    .Simplicity_block {
+        display: flex;
+        width: 100%;
+        height: 867px;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .stripe {
+        margin-top: 110px;
+        z-index: 78;
+    }
     .Drop_Us_Contact_Info_block {
         width: 82%;
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 140px;
+        margin-top: 100px;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -3989,12 +5153,11 @@ footer img {
     footer {
         display: flex;
         width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0px;
-        top: 11390px;
+        height: 85%;
         z-index: 22;
+        bottom: 0;
         flex-direction: column;
+        margin-top: -400px;
     }
     .footer_company {
         display: flex;
@@ -4006,7 +5169,7 @@ footer img {
     .footer_text {
         display: flex;
         align-items: center;
-        margin-top: 70px;
+        margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
         width: 80%;

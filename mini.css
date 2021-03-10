@@ -1128,6 +1128,7 @@ header {
     flex-direction: column;
     justify-content: center;
     margin-top: 100px;
+    position: relative;
 }
 
 .Portfolio_block {
@@ -1205,6 +1206,7 @@ header {
     justify-content: space-around;
     width: 100%;
     position: relative;
+    height: 700px;
 }
 
 .Our_Clients_block img {
@@ -1226,14 +1228,14 @@ header {
     align-items: center;
     position: absolute;
     align-self: center;
-    margin-top: -20px;
+    margin-top: -180px;
 }
 
 .Our_Clients_block__company {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -450px;
+    margin-top: 130px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -1614,7 +1616,7 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 90px;
+    margin-top: -340px;
 }
 
 .Portfolio_block__text {
@@ -2088,7 +2090,7 @@ header {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 310px;
+    margin-top: 70px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;

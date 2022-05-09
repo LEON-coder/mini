@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url('./fonts/opensans/OpenSans-Regular.woff2');
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("./fonts/opensans/OpenSans-Bold.woff2");
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("./fonts/opensans/OpenSans-Light.woff2");
+    font-weight: 700;
+    font-style: 'Light';
+}
+
 @-ms-viewport {
     width: device-width;
 }
@@ -31,6 +50,7 @@ header {
     height: 1100px;
     padding-left: 0;
     padding-right: 0;
+    background-repeat: no-repeat;
 }
 
 .header-block {
@@ -76,6 +96,7 @@ header {
     z-index: 734;
     text-decoration: none;
     margin-right: 80px;
+    transition: all 1s;
 }
 
 .header__list_item a:hover {
@@ -98,7 +119,7 @@ header {
 }
 
 .Design {
-    font-family: "OpenSans";
+    font-family: "OpenSans, bold";
     font-weight: 600;
     font-size: 55px;
     color: rgb(255, 255, 255);
@@ -121,7 +142,7 @@ header {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .link {
@@ -156,16 +177,18 @@ header {
 .main-block {
     display: flex;
     width: 100%;
-    height: 4000px;
     flex-direction: column;
+    height: auto;
+    margin-top: 134px;
 }
 
 .about-block {
-    width: 65%;
+    width: 1028px;
     display: flex;
     margin-left: auto;
+    height: auto;
     margin-right: auto;
-    margin-top: 90px;
+    margin-top: 0px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -192,7 +215,7 @@ header {
 
 .about-block__text_proin_gravida {
     font-size: 16px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, regular";
     color: rgb(77, 77, 77);
     text-transform: uppercase;
     line-height: 1.563;
@@ -203,14 +226,26 @@ header {
     align-self: baseline;
 }
 
+.our-story-block-menu {
+    display: flex;
+    margin-top: 150px;
+}
+
+.our-story__left-menu {
+    display: flex;
+    align-items: flex-start;
+}
+
 .our_story_block {
     display: flex;
-    margin-top: 100px;
-    width: 65%;
+    margin-top: 0px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
 }
 
 .our_story_block_picture {
@@ -252,18 +287,19 @@ header {
     flex-direction: column;
     margin-left: 30px;
     justify-content: left;
-    width: 45%;
+    width: 655px;
 }
 
 .main-block__our_Story_text {
     font-size: 20px;
     font-family: "OpenSans";
     color: rgb(13, 13, 13);
-    font-weight: bold;
+    font-weight: 800;
     text-transform: uppercase;
     line-height: 1.25;
     text-align: left;
     z-index: 672;
+    font-style: italic;
 }
 
 .Aenean_sollicitudin__lorem_quis_bibendum_auctor {
@@ -272,7 +308,7 @@ header {
     color: rgb(231, 76, 60);
     line-height: 1.4;
     text-align: left;
-    width: 82%;
+    width: 472px;
     z-index: 671;
     margin-top: 20px;
 }
@@ -282,8 +318,9 @@ header {
     line-height: 1.4;
     text-align: left;
     margin-top: 30px;
+    font-weight: 300;
     font-size: 18px;
-    width: 90%;
+    width: 504px;
     height: 215px;
     z-index: 671;
     padding-right: 0;
@@ -314,7 +351,7 @@ header {
     width: 65%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 130px;
+    margin-top: 250px;
     flex-wrap: wrap;
 }
 
@@ -349,7 +386,7 @@ header {
 
 .Our_Skills {
     font-size: 20px;
-    font-family: "OpenSans";
+    font-family: "'OpenSans'";
     color: rgb(13, 13, 13);
     font-weight: bold;
     text-transform: uppercase;
@@ -434,25 +471,28 @@ header {
 }
 
 .Simplicity_block {
-    display: flex;
+    background-image: url('./img/main/section_4/back_section-4.png');
     width: 100%;
-    height: 867px;
+    height: 720px;
     background-repeat: no-repeat;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 300px;
+    margin-top: 70px;
+    display: flex;
 }
 
-.Simplicity_block_pic {
-    position: absolute;
+.Simplicity_block_quot {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 600px;
+    font-family: "OpenSans, Bold";
+    font-weight: 600;
 }
 
 .Simplicity_block__text {
     font-size: 45px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, Bold";
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.333;
@@ -468,11 +508,11 @@ header {
 
 .Simplicity_block__John_Maeda {
     font-size: 25px;
-    font-family: "OpenSans";
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
     line-height: 2.5;
+    font-family: "OpenSans, Bold";
     text-align: center;
     z-index: 625;
 }
@@ -492,7 +532,8 @@ header {
 }
 
 .section_team-block {
-    margin-top: 180px;
+    margin-top: 60px;
+    height: 740px;
 }
 
 .team-block {
@@ -500,14 +541,14 @@ header {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 110px;
+    margin-top: 0px;
     justify-content: center;
     align-items: center;
 }
 
 .team-block__text {
     font-size: 30px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, Bold";
     color: rgb(13, 13, 13);
     font-weight: bold;
     text-transform: uppercase;
@@ -631,8 +672,19 @@ header {
     margin-top: 20px;
 }
 
+.icon-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .icon:hover {
-    color: #f2b14a;
+    display: none;
+}
+
+.icon-block:hover .icon_hover {
+    display: flex;
 }
 
 .Members_block__Jesmine_Doe {
@@ -735,13 +787,14 @@ header {
 }
 
 .section_4 {
-    display: flex;
+    background-image: url('./img/main/section_4/back_section-4.png');
     width: 100%;
     height: 767px;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
-    margin-top: 520px;
+    margin-top: 0px;
+    display: flex;
 }
 
 .section_4_pic {
@@ -753,53 +806,96 @@ header {
 .section_4__all_blocks {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 1166px;
     z-index: 78;
-    align-items: center;
+    margin-top: 0px;
 }
 
 .section_4_block {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all;
 }
 
 .section_4__Ellipse_8_cup {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 2s;
 }
 
 .section_4__Ellipse_8 {
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 100%;
+    position: absolute;
 }
 
-.section_4__cup {
+.section_4__Ellipse_8:hover .section_4__icon-hover {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+}
+
+.section_4__Ellipse_8_cup:hover .section_4__Ellipse_8-hover {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+}
+
+.section_4__Ellipse_8_cup:hover .section_4__icon-hover {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+}
+
+.section_4__Ellipse_8_cup:hover .section_4__icon {
+    display: none;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+}
+
+.section_4__Ellipse_8-hover {
+    display: none;
+}
+
+.section_4__icon {
     position: absolute;
     justify-content: center;
     display: flex;
     align-self: center;
 }
 
+.section_4__icon-hover {
+    display: none;
+}
+
+.section_4__describes {
+    margin-top: 90px;
+}
+
 .section_4__6k {
     font-size: 45px;
-    font-family: "OpenSans";
+    font-family: "OpenSans , bold";
     color: rgb(255, 255, 255);
-    font-weight: bold;
     line-height: 1.2;
     text-align: center;
     z-index: 489;
     margin-top: 30px;
+    font-weight: 600;
 }
 
 .section_4__Coffees {
     font-size: 30px;
-    font-family: "OpenSans";
+    font-family: "OpenSans", bold;
     color: rgb(255, 255, 255);
-    font-weight: bold;
     line-height: 1;
     text-align: center;
     z-index: 489;
@@ -808,8 +904,8 @@ header {
 .section_5 {
     display: flex;
     width: 100%;
-    height: 600px;
-    margin-top: 160px;
+    height: 520px;
+    margin-top: 0px;
     flex-direction: column;
 }
 
@@ -818,7 +914,7 @@ header {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 110px;
+    margin-top: 0px;
     justify-content: center;
     align-items: center;
     padding-left: 0;
@@ -827,7 +923,7 @@ header {
 
 .service-block__text {
     font-size: 30px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, bold";
     color: rgb(13, 13, 13);
     font-weight: bold;
     text-transform: uppercase;
@@ -874,8 +970,8 @@ header {
 
 .section_5__Branding {
     font-size: 20px;
-    font-family: "OpenSans";
     color: rgb(13, 13, 13);
+    font-family: "OpenSans, bold";
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.25;
@@ -951,7 +1047,7 @@ header {
 
 .section_5__Designing {
     font-size: 20px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, bold";
     color: rgb(13, 13, 13);
     font-weight: bold;
     text-transform: uppercase;
@@ -963,7 +1059,7 @@ header {
 
 .section_5__Nam_nec_tellus {
     font-size: 16px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, regular";
     color: rgb(115, 115, 115);
     line-height: 1.75;
     text-align: center;
@@ -989,9 +1085,9 @@ header {
 
 .section_5__Developing {
     font-size: 20px;
-    font-family: "OpenSans";
     color: rgb(13, 13, 13);
     font-weight: bold;
+    font-family: "OpenSans, bold";
     text-transform: uppercase;
     line-height: 1.25;
     text-align: center;
@@ -1018,9 +1114,9 @@ header {
 
 .section_6__Packege_Pricing {
     font-size: 20px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, bold";
     color: rgb(13, 13, 13);
-    font-weight: bold;
+    font-weight: 800;
     text-transform: uppercase;
     line-height: 1.25;
     text-align: left;
@@ -1065,23 +1161,23 @@ header {
 
 .section_6__Proin_gravida {
     font-size: 16px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, regular";
     color: rgb(115, 115, 115);
     line-height: 1.75;
     text-align: left;
     width: 70%;
-    height: 101px;
+    height: auto;
     z-index: 450;
     margin-top: 20px;
 }
 
 .Maria_Jones_block {
     width: 100%;
-    height: 767px;
+    height: 578px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 .Portfolio_block {
@@ -1089,7 +1185,7 @@ header {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
+    margin-top: 70px;
     justify-content: center;
     align-items: center;
 }
@@ -1106,11 +1202,13 @@ header {
 }
 
 .twitter_block {
-    margin-top: 300px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 702px;
+    background-repeat: no-repeat;
 }
 
 .John_Doe_24_Comments {
@@ -1126,7 +1224,7 @@ header {
 
 .Read_On {
     font-size: 14.413px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, Bold";
     color: rgb(13, 13, 13);
     font-weight: bold;
     text-transform: uppercase;
@@ -1152,26 +1250,24 @@ header {
 }
 
 .Our_Clients_block {
+    background-image: url('./img/main/our_clients/back__our_clients.png');
     display: flex;
-    margin-top: 300px;
+    margin-top: 0;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
+    background-repeat: no-repeat;
     position: relative;
-}
-
-.Our_Clients_block img {
-    width: 100%;
-    height: 500%;
 }
 
 .Our_Clients {
     font-size: 30px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, Bold";
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
     line-height: 2;
+    background-repeat: no-repeat;
     text-align: center;
     z-index: 123;
     display: flex;
@@ -1179,18 +1275,19 @@ header {
     align-items: center;
     position: absolute;
     align-self: center;
-    margin-top: -20px;
+    margin-top: -359px;
 }
 
 .Our_Clients_block__company {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -450px;
+    margin-top: 0;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
+    height: 710px;
 }
 
 .twitter_block_section_logo_text {
@@ -1205,7 +1302,7 @@ header {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 300px;
+    margin-top: 60px;
     justify-content: center;
     align-items: center;
 }
@@ -1239,6 +1336,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 248px;
+    cursor: pointer;
 }
 
 .section_6__tariffs__block-basic:hover .section_6__Basic {
@@ -1275,9 +1373,9 @@ header {
 
 .Basic {
     font-size: 22px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, bold";
     color: rgb(13, 13, 13);
-    font-weight: bold;
+    font-weight: 800;
     text-transform: uppercase;
     line-height: 2.045;
     text-align: center;
@@ -1295,9 +1393,9 @@ header {
 
 .DOLLAR_35 {
     font-size: 22px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, bold";
     color: rgb(13, 13, 13);
-    font-weight: bold;
+    font-weight: 800;
     text-transform: uppercase;
     line-height: 2.045;
     text-align: center;
@@ -1351,19 +1449,20 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "OpenSans, semibold";
 }
 
 .purchase {
     font-size: 15.522px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, SemiBold";
     color: rgb(13, 13, 13);
     text-transform: uppercase;
+    font-weight: 600;
     line-height: 1.2;
     text-align: center;
     -moz-transform: matrix( 0.8, 0, 0, 0.90196078431373, 0, 0);
     -webkit-transform: matrix( 0.8, 0, 0, 0.90196078431373, 0, 0);
     -ms-transform: matrix( 0.8, 0, 0, 0.90196078431373, 0, 0);
-    z-index: 372;
     text-decoration: none;
     border-style: solid;
     border-width: 2px;
@@ -1386,6 +1485,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 248px;
+    cursor: pointer;
 }
 
 .section_6__tariffs__block-Gold:hover .section_6__Gold {
@@ -1426,18 +1526,18 @@ header {
 
 .Gold {
     font-size: 22px;
-    font-family: "OpenSans";
-    color: rgb(13, 13, 13);
-    font-weight: bold;
     text-transform: uppercase;
     line-height: 2.045;
+    font-family: "OpenSans, bold";
+    color: rgb(13, 13, 13);
+    font-weight: 800;
     text-align: center;
     z-index: 378;
 }
 
 .DOLLAR_99 {
     font-size: 22px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, bold";
     color: rgb(13, 13, 13);
     font-weight: bold;
     text-transform: uppercase;
@@ -1450,6 +1550,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 248px;
+    cursor: pointer;
 }
 
 .section_6__tariffs__block-Silver:hover .section_6__Silver {
@@ -1486,10 +1587,10 @@ header {
 
 .Silver {
     font-size: 22px;
-    font-family: "OpenSans";
-    color: rgb(13, 13, 13);
-    font-weight: bold;
     text-transform: uppercase;
+    font-family: "OpenSans, bold";
+    color: rgb(13, 13, 13);
+    font-weight: 800;
     line-height: 2.045;
     text-align: center;
     z-index: 378;
@@ -1497,10 +1598,10 @@ header {
 
 .DOLLAR_65 {
     font-size: 22px;
-    font-family: "OpenSans";
-    color: rgb(13, 13, 13);
-    font-weight: bold;
     text-transform: uppercase;
+    font-family: "OpenSans, bold";
+    color: rgb(13, 13, 13);
+    font-weight: 800;
     line-height: 2.045;
     text-align: center;
     z-index: 378;
@@ -1510,7 +1611,7 @@ header {
     z-index: 4;
     position: absolute;
     width: 100%;
-    height: 460px;
+    height: 582px;
 }
 
 .Maria_Jones_block__Maria {
@@ -1565,12 +1666,25 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 0px;
+}
+
+.bridges_back {
+    display: none;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    position: absolute;
+    height: fit-content;
+}
+
+.shape_camera {
+    display: flex;
 }
 
 .Portfolio_block__text {
     font-size: 30px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, bold";
     color: rgb(13, 13, 13);
     font-weight: bold;
     text-transform: uppercase;
@@ -1589,7 +1703,7 @@ header {
 
 .Portfolio_block__about-block {
     font-size: 16px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, regular";
     color: rgb(77, 77, 77);
     text-transform: uppercase;
     line-height: 1.563;
@@ -1603,11 +1717,12 @@ header {
 
 .Portfolio_section_pic {
     display: flex;
-    margin-top: 150px;
+    margin-top: 120px;
     width: 1170px;
     height: 580px;
     background: #f39c12;
     justify-content: center;
+    position: relative;
 }
 
 .Portfolio__shape {
@@ -1620,10 +1735,8 @@ header {
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin-right: 0;
-    margin-left: 570px;
-    margin-top: 100px;
-    margin-bottom: auto;
+    right: 30px;
+    top: 50%;
 }
 
 .Portfolio_arrows {
@@ -1666,7 +1779,7 @@ header {
 
 .Portfolio__Digital_ArtWork {
     font-size: 20px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, Bold";
     color: rgb(13, 13, 13);
     text-transform: uppercase;
     line-height: 1.25;
@@ -1689,9 +1802,13 @@ header {
     margin-right: auto;
 }
 
+.Portfolio_item {
+    list-style: none;
+}
+
 .Portfolio_item a {
     font-size: 14px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, Bold";
     color: #1d1d1d;
     font-weight: bold;
     text-transform: uppercase;
@@ -1743,16 +1860,35 @@ header {
 }
 
 .project_Title_Here_Graphics_block {
-    display: flex;
-    justify-content: center;
     text-align: center;
-    flex-direction: column;
     width: 293px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 302px;
     align-items: center;
 }
 
-.project_Title_Here_Graphics_block:hover .project_Title_Here_Graphics_text,
+.project_Title_Here_Graphics_block:hover .Ellipse_15 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+    width: auto;
+}
+
+.project_Title_Here_Graphics_block:hover .bridges_back {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 242px;
+    width: 293px;
+}
+
+.project_Title_Here_Graphics_block:hover .project_Title_Here_Graphics_text {
+    color: #f39c12;
+}
+
 .project_Title_Here_Graphics_block:hover .Graphics_text {
     color: #f39c12;
 }
@@ -1760,14 +1896,15 @@ header {
 .project_Title_Here_Graphics:hover {
     background: url('img/main/Maria_Jones/Layer 52 copy_hover.png');
     z-index: 10;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .project_Title_Here_Graphics:hover .Ellipse_15 {
     display: flex;
-}
-
-.project_Title_Here_Graphics:hover .project_Title_Here_Graphics_shape {
-    display: none;
+    position: absolute;
 }
 
 .project_Title_Here_Graphics {
@@ -1789,25 +1926,21 @@ header {
 }
 
 .project_Title_Here_Graphics_grey {
-    background-color: rgb(183, 183, 183);
+    font-size: 15px;
+    font-family: "OpenSans";
+    color: rgb(13, 13, 13);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.467;
+    text-align: center;
     width: 293px;
-    z-index: 241;
+    height: 302px;
+    z-index: 236;
     display: flex;
-    height: inherit;
+    flex-direction: column;
     justify-content: center;
-}
-
-.project_Title_Here_Graphics_grey:hover {
-    background: url('img/main/Maria_Jones/Layer 52 copy_hover.png');
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    z-index: 567;
-    opacity: 1;
-}
-
-.project_Title_Here_Graphics_grey:hover .project_Title_Here_Graphics_shape {
-    display: none;
+    align-items: center;
+    background: #c7c7c7;
 }
 
 .project_Title_Here_Graphics_shape {
@@ -1816,10 +1949,7 @@ header {
     align-self: center;
     justify-content: center;
     z-index: 0;
-}
-
-.project_Title_Here_Graphics_grey:hover .Ellipse_15 {
-    display: flex;
+    position: relative;
 }
 
 .Ellipse_15 {
@@ -1829,13 +1959,9 @@ header {
     align-self: center;
 }
 
-.project_Title_Here_Graphics_shape img {
-    z-index: auto;
-}
-
 .project_Title_Here_Graphics_text {
     font-size: 15px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, Bold";
     color: rgb(13, 13, 13);
     font-weight: bold;
     text-transform: uppercase;
@@ -1862,11 +1988,25 @@ header {
     margin-top: 20px;
 }
 
+.twitter_block {
+    background-image: url('./img/main/twitter_block/brands__back.png');
+    display: flex;
+    height: 700px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .twitter_block_block {
     display: flex;
     z-index: 5;
     justify-content: center;
     align-items: center;
+}
+
+.person_block {
+    display: flex;
 }
 
 .twitter_block_twitter {
@@ -1875,7 +2015,7 @@ header {
 
 .twitter_block__Aenean_sollicitudin__auctor {
     font-size: 22px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, Bold";
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.5;
@@ -1888,6 +2028,7 @@ header {
 
 .twitter_block__link {
     color: #af7616;
+    font-family: "OpenSans, Bold";
 }
 
 .three_hours_ago {
@@ -1899,7 +2040,7 @@ header {
 
 .twitter_block_section__text {
     font-size: 30px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, Bold";
     color: rgb(13, 13, 13);
     font-weight: bold;
     text-transform: uppercase;
@@ -1936,9 +2077,9 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 1000px;
 }
 
 .twitter_block_section__section-1 {
@@ -1983,7 +2124,7 @@ header {
 
 .twitter_block_section__Awesome_Blog {
     font-size: 20px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, Bold";
     color: rgb(13, 13, 13);
     font-weight: bold;
     text-transform: uppercase;
@@ -2038,7 +2179,7 @@ header {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 310px;
+    margin-top: 60px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -2046,7 +2187,7 @@ header {
 
 .Contact_block_section__text {
     font-size: 30px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, Bold";
     color: rgb(13, 13, 13);
     font-weight: bold;
     text-transform: uppercase;
@@ -2079,7 +2220,7 @@ header {
 }
 
 .Drop_Us_Contact_Info_block {
-    width: 70%;
+    width: 1250px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -2098,6 +2239,7 @@ header {
     position: relative;
     justify-content: center;
     width: 624px;
+    font-family: "OpenSans";
 }
 
 .Drop_Us_block {
@@ -2111,7 +2253,7 @@ header {
 
 .Drop_Us_A_Message {
     font-size: 20px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, Bold";
     color: rgb(13, 13, 13);
     font-weight: bold;
     text-transform: uppercase;
@@ -2135,6 +2277,7 @@ header {
     margin-top: 20px;
     position: relative;
     padding-left: 28px;
+    font-family: "OpenSans";
 }
 
 .user {
@@ -2252,7 +2395,7 @@ header {
 
 .Contact_Info_text {
     font-size: 20px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, Bold";
     color: rgb(13, 13, 13);
     font-weight: bold;
     text-transform: uppercase;
@@ -2268,14 +2411,14 @@ header {
     line-height: 1.75;
     text-align: left;
     width: 427px;
-    height: 73px;
     z-index: 87;
     margin-top: 10px;
 }
 
 .Submit {
     font-size: 16.522px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, SemiBold";
+    font-weight: 500;
     color: rgb(13, 13, 13);
     text-transform: uppercase;
     line-height: 1.2;
@@ -2402,8 +2545,6 @@ footer {
     height: 500px;
     z-index: 22;
     flex-direction: column;
-    position: absolute;
-    top: 11830px;
 }
 
 footer img {
@@ -2432,7 +2573,7 @@ footer img {
 
 .MINI_2014__All_Right {
     font-size: 14px;
-    font-family: "OpenSans";
+    font-family: "OpenSans, SemiBold";
     color: rgb(13, 13, 13);
     text-transform: uppercase;
     line-height: 1.2;
@@ -2448,13 +2589,34 @@ footer img {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 248px;
 }
 
-.icon {
+.icon-block:hover .icon_hover {
+    display: flex;
+}
+
+.icon_hover {
     margin-right: 21px;
+    position: absolute;
+    display: none;
+    justify-self: center;
+    align-self: center;
 }
 
-.icon:hover {}
+.icon_hover:hover {
+    display: none;
+}
+
+.icon:hover .icon--hover {
+    display: flex;
+}
+
+.footer__icon {}
+
+.footer__icon--hover {
+    display: none;
+}
 
 @media (min-width: 300px) and (max-width: 450px) {
     .header__list {

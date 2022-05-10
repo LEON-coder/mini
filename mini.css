@@ -668,24 +668,19 @@ header {
 .social_icons {
     display: flex;
     justify-content: space-between;
-    width: 55%;
+    width: 150px;
     margin-top: 20px;
+    height: auto;
 }
 
 .icon-block {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+ .icon-block:hover .icon_hover { display:flex;}
 
-.icon:hover {
-    display: none;
-}
-
-.icon-block:hover .icon_hover {
-    display: flex;
-}
 
 .Members_block__Jesmine_Doe {
     display: flex;
@@ -2591,28 +2586,44 @@ footer img {
     align-items: center;
     width: 248px;
 }
+.icon {
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    }
+
+.icon-block:hover .icon {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
 .icon-block:hover .icon_hover {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon_hover {
-    margin-right: 21px;
+.icon_hover {  
     position: absolute;
     display: none;
     justify-self: center;
     align-self: center;
 }
 
-.icon_hover:hover {
-    display: none;
+.icon:hover .icon_hover {
+    display: flex;
 }
 
 .icon:hover .icon--hover {
     display: flex;
 }
 
-.footer__icon {}
+.footer__icon:hover .footer__icon--hover  {
+    display: flex;
+}
 
 .footer__icon--hover {
     display: none;

@@ -604,7 +604,7 @@
         
         .john_Doe {
             font-size: 20px;
-            font-family: "OpenSans";
+            font-family: "OpenSans, Bold";
             color: rgb(13, 13, 13);
             font-weight: bold;
             text-transform: uppercase;
@@ -696,7 +696,7 @@
         
         .Jesmine_Doe {
             font-size: 20px;
-            font-family: "OpenSans";
+            font-family: "OpenSans, Bold";
             color: rgb(13, 13, 13);
             font-weight: bold;
             text-transform: uppercase;
@@ -740,10 +740,9 @@
         
         .Martin_Doe {
             font-size: 20px;
-            font-family: "OpenSans";
             color: rgb(13, 13, 13);
             font-weight: bold;
-            text-transform: uppercase;
+            font-family: "OpenSans, Bold";
             line-height: 1;
             text-align: center;
             z-index: 533;
@@ -762,10 +761,10 @@
         
         .Anthony_Doe {
             font-size: 20px;
-            font-family: "OpenSans";
             color: rgb(13, 13, 13);
             font-weight: bold;
             text-transform: uppercase;
+            font-family: "OpenSans, Bold";
             line-height: 1;
             text-align: center;
             z-index: 533;
@@ -2424,11 +2423,11 @@
         
         .pen_hover {
     position: absolute;
+    display: none;
     justify-content: center;
     align-content: center;
     z-index: 100;
-    display: none;
-    top: 60px;
+    top: 55px;
     right: 28px;
 }
         
@@ -2471,11 +2470,14 @@
         }
         
         .text_input_block:hover .input_block__pen {
-            display: none;
+            display: flex;
+        }
+
+  .text_input_block:hover .pen_hover {
+            display: flex;
         }
         
-        .text_input_block:hover .input_block__pen {
-            display: none;
+       .input_block__pen {
             position: absolute;
             display: flex;
             justify-content: center;
